@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Cellyse" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/cellyseColor</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="Theme.Cellyse" parent="Base.Theme.Cellyse" />
+
+    <style name="inputText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textColor">#878787</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+</resources>

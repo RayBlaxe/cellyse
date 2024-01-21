@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cellyse</string>
+    <string name="login_button">Login</string>
+    <string name="google_button">Daftar dengan Google</string>
+    <string name="daftar_button">Daftar</string>
+    <string name="have_acc">Sudah memiliki akun?</string>
+    <string name="signin">Masuk</string>
+    <string name="snk1">Dengan mendaftarkan akun, anda bersedia</string>
+    <string name="snk2">menyetujui</string>
+    <string name="snk3"><u>Syarat dan ketentuan</u></string>
+
+    <string name="snk4">, dan</string>
+    <string name="snk5"><u>Kebijakan Privasi</u></string>
+
+    <string name="sudahakun1">Sudah memiliki akun?</string>
+    <string name="sudahakun2"><u>Masuk</u></string>
+
+
+    <string name="sapaan_daftar">Daftar Akun</string>
+    <string name="desk_daftar">Silahkan daftar akun anda dibawah ini</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

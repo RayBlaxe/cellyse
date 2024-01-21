@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llprediksi"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    tools:context=".PrediksiFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Kita Mulai"
+        android:textSize="24sp"
+        android:textFontWeight="700"
+        android:textColor="@color/black"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan Umur"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtUmur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan umur disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtJenisKelamin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jenis kelamin"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pernah mengalami serangan fisik?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsSeranganFisik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pernah melakukan pertengkaran?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsPertengkaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Merasa kesepian?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Never - Always : 1 - 5"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsKesepian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Memiliki teman dekat?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtTemanDekat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bolos sekolah?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak pernah - lebih dari 10 hari : 0 - 10"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsBolos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siswa lain baik dan suka membantu?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Never - Always : 1 - 5"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsSukaMembantu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orang tua dapat memahami masalah?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Never - Always : 1 - 5"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtisOrtuMemahami"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sering kesepian?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsSeringKesepian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bolos kelas tanpa izin?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsBolosIzin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kekurangan berat badan?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtKekuranganBerat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelebihan berat badan?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtKelebihanBerat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obesitas?"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya = 1,  Tidak = 0"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <EditText
+                        android:id="@+id/edtIsObesitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan jawaban disini"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp">
+                <Button
+                    android:id="@+id/btnPrediksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prediksi"
+                    app:cornerRadius="10dp"
+                    android:backgroundTint="#4659B5"
+                    android:textSize="14sp"
+                    android:layout_weight="600"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil Prediksi"
+                    android:textSize="14sp"
+                    android:textFontWeight="500"
+                    android:textColor="#6D6D6D"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="8dp">
+                    <TextView
+                        android:id="@+id/edtHasilPrediksi"
+                        android:layout_width="match_parent"
+                        android:text="hai"
+                        android:layout_height="wrap_content"
+                        style="@style/inputText"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
