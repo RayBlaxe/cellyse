@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
     android:gravity="center_horizontal"
+    android:theme="@style/cellyse"
     android:orientation="vertical">
 
 

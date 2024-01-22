@@ -8,5 +8,8 @@
     <color name="txtGrayColor">#787878</color>
     <color name="txtInpColor">#878787</color>
     <color name="Outlineinput">#cbcbcb</color>
+    <color name="tombolPink">#E8587E</color>
+    <color name="baseColor">#EFEFEF</color>
+
 
 </resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/topbar"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="bottom"
+            android:src="@drawable/ic_chevron_left"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="bottom"
+            android:text="Edit Profil"
+            android:textAppearance="@style/judul_page" />
+    </LinearLayout>
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_square"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:width="265dp"
+            android:height="40dp"
+
+            android:background="@drawable/bg_input"
+            android:paddingLeft="20dp"
+            android:text="raihan"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:width="265dp"
+            android:height="40dp"
+
+            android:background="@drawable/bg_input"
+            android:paddingLeft="20dp"
+            android:text="raihan23@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_pass"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:width="265dp"
+            android:height="40dp"
+            android:background="@drawable/bg_input"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/txtInpColor"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_repass"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:width="265dp"
+            android:height="40dp"
+            android:background="@drawable/bg_input"
+            android:hint="Masukkan ulang Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/txtInpColor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/select_un"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:width="265dp"
+            android:height="21dp"
+            android:background="@drawable/button"
+            android:text="Simpan"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

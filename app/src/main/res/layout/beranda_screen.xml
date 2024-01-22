@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/cellyse"
+    tools:context=".BerandaScreen"
+    android:background="@color/baseColor"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/topbar"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="bottom"
+            android:text="Beranda"
+            android:textAppearance="@style/judul_page" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:divider="@drawable/empty_divider_v"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/greet_card"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halo,"
+                android:textAppearance="@style/greeting1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jevina"
+                android:textAppearance="@style/greeting2" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/judul_artikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Artikel" />
+
+        <EditText
+            style="@style/textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="cari artikel" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_artikel"
+            android:layout_width="match_parent"
+            android:layout_height="403dp"
+            android:layout_marginTop="10dp"
+
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tabel"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_beranda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beranda" />
+
+            <Button
+                android:id="@+id/btn_prediksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prediksi" />
+
+            <Button
+                android:id="@+id/btn_riwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat" />
+
+            <Button
+                android:id="@+id/btn_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
+

@@ -10,18 +10,45 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Cellyse"
+
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:label="@string/app_name"
+            android:theme="@style/cellyse"
+        android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterScreen"/>
+
+        <activity android:name=".RegisterScreen"
+            android:theme="@style/cellyse"/>
+
+        <activity android:name=".LandingScreen"
+            android:theme="@style/cellyse"/>
+
+
+        <activity android:name=".BerandaScreen"
+            android:theme="@style/cellyse"
+            />
+        <activity android:name=".LoginScreen"
+            android:theme="@style/cellyse"
+            />
+        <activity android:name=".PrediksiFragment"
+            android:theme="@style/cellyse"
+            />
+        <activity android:name=".ProfilScreen"
+            android:theme="@style/cellyse"
+            />
+        <activity android:name=".EditProfilScreen"
+            android:theme="@style/cellyse"
+            />
+        <activity android:name=".RiwayatScreen"
+            android:theme="@style/cellyse"
+            />
+
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 

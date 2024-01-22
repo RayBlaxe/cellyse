@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "310889988474",
+    "firebase_url": "https://apt-mark-408318-default-rtdb.firebaseio.com",
+    "project_id": "apt-mark-408318",
+    "storage_bucket": "apt-mark-408318.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310889988474:android:eb674c09fb1e50f2da56c3",
+        "android_client_info": {
+          "package_name": "com.project.celllyse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310889988474-snpn3fvljois180kf2m191h0kqg3r62g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.celllyse",
+            "certificate_hash": "51e8618b4683a2daa792ab9a2cff6fee1d781cbc"
+          }
+        },
+        {
+          "client_id": "310889988474-hhnnukvb5c8cfamnm1d19uc9sb0bcj29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmQb7PpZR_ZitL-SJTvsGbU9ozER9CY4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310889988474-hhnnukvb5c8cfamnm1d19uc9sb0bcj29.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "310889988474-3rrmf22i7fi63l7em9o4sl65un4ufm2r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.raihan.zalamobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_18886"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:background="@drawable/frame_artikel"
+    android:orientation="horizontal"
+    android:divider="@drawable/empty_divider"
+    android:showDividers="middle"
+    android:theme="@style/cellyse"
+    android:layout_marginTop="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="78dp"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/fotoartikel"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/foto_jevina" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="10dp">
+
+
+        <TextView
+            android:id="@+id/judul_artikel"
+            android:layout_width="183dp"
+            android:layout_height="42dp"
+            android:text="Seorang Anak di SMAN 8 Gamprit terkena bully"
+            android:textAppearance="@style/judul_artikel"
+
+            />
+
+        <TextView
+            android:id="@+id/isi_artikel"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum Lorem Ipsum "
+            android:textAppearance="@style/isi_artikel"
+
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/group_3125"
+        android:layout_width="36.26dp"
+        android:layout_height="84dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tombol_artikel"
+
+
+        />
+
+
+</LinearLayout>
+
